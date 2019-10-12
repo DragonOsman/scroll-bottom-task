@@ -1,14 +1,9 @@
 "use strict";
-function findScrollBottom() {
-  const elem = document.getElementById("container-elem");
-  if (elem.scrollTop === elem.scrollHeight) {
-    return 0;
-  }
-
-  return elem.scrollHeight - elem.scrollTop;
+function findScrollBottom(elem) {
+  return (elem.scrollHeight - elem.scrollTop - elem.clientHeight);
 }
 
-const displayPara = document.createElement("p");
-displayPara.textContent = `${findScrollBottom()}`;
 const containerElem = document.getElementById("container-elem");
+const displayPara = document.createElement("p");
+displayPara.textContent = `${findScrollBottom(containerElem)}`;
 containerElem.insertAdjacentElement("afterend", displayPara);
