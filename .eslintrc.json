@@ -13,31 +13,37 @@
     },
     "parserOptions": {
         "ecmaVersion": 2019,
-        "sourceType": "script"
+        "sourceType": "script",
+        "parser": "babel-eslint"
     },
     "rules": {
-        "eqeqeq": 2,
-        "comma-dangle": 1,
-        "no-console": 0,
-        "no-var": 2,
-        "no-debugger": 1,
-        "no-extra-semi": 1,
-        "no-extra-parens": 1,
-        "no-irregular-whitespace": 0,
-        "no-undef": 0,
-        "no-unused-vars": 1,
-        "semi": 0,
-        "semi-spacing": 0,
+        "eqeqeq": "error",
+        "comma-dangle": "warn",
+        "no-console": "off",
+        "no-var": "error",
+        "no-debugger": "warn",
+        "no-extra-semi": "warn",
+        "no-extra-parens": "warn",
+        "no-irregular-whitespace": "off",
+        "no-undef": "off",
+        "no-unused-vars": "warn",
+        "semi": "off",
+        "semi-spacing": "off",
         "valid-jsdoc": [
-            2,
+            "error",
             { "requireReturn": false }
         ],
         "quotes": [
-            2,
+            "error",
             "double"
         ],
-        "space-before-function-paren": 0,
-        "import/extensions":0,
-        "prefer-const": 2
+        "space-before-function-paren": "off",
+        "import/extensions": "off",
+        "prefer-const": "error",
+        "newline-before-return": "error",
+        "indent": [
+            "error",
+            2
+        ]
     }
 }
