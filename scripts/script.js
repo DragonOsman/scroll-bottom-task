@@ -1,16 +1,14 @@
 "use strict";
-function findScrollBottom(elem) {
-  const scrollTop = elem.scrollTop;
-  if (scrollTop === elem.scrollHeight) {
+function findScrollBottom() {
+  const elem = document.getElementById("container-elem");
+  if (elem.scrollTop === elem.scrollHeight) {
     return 0;
   }
 
-  const scrollBottom = elem.scrollHeight - scrollTop;
-
-  return scrollBottom;
+  return elem.scrollHeight - elem.scrollTop;
 }
 
-const elem = document.getElementById("container-elem");
-const display = document.createElement("p");
-display.textContent = `${findScrollBottom(elem)}`;
-document.body.append(display);
+const displayPara = document.createElement("p");
+displayPara.textContent = `${findScrollBottom()}`;
+const containerElem = document.getElementById("container-elem");
+containerElem.insertAdjacentElement("afterend", displayPara);
