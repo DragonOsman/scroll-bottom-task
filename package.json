@@ -1,0 +1,26 @@
+{
+  "name": "scroll-botton-task",
+  "version": "1.0.0",
+  "description": "Solution to javascript.info chapter \"Size and Scroll\" task 1",
+  "main": "scripts/script.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DragonOsman/scroll-bottom-task.git"
+  },
+  "keywords": [
+    "task-solution",
+    "javascript.info",
+    "size-and-scroll"
+  ],
+  "author": "Osman Zakir",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DragonOsman/scroll-bottom-task/issues"
+  },
+  "homepage": "https://github.com/DragonOsman/scroll-bottom-task#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.5.1",
+    "eslint-config-standard": "^14.1.0"
+  }
+}
