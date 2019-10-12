@@ -9,3 +9,8 @@ function findScrollBottom(elem) {
 
   return scrollBottom;
 }
+
+const elem = document.getElementById("container-elem");
+const display = document.createElement("p");
+display.textContent = `${findScrollBottom(elem)}`;
+document.body.append(display);
