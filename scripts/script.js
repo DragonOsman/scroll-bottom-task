@@ -1,10 +1,6 @@
 "use strict";
 function findScrollBottom(elem) {
-  if (elem.scrolTop === (elem.scrollHeight - elem.offsetHeight)) {
-    return 0;
-  }
-
-  return (elem.scrollHeight - elem.scrollTop - elem.clientHeight);
+  return (elem.scrollHeight - elem.scrollTop - elem.offsetHeight);
 }
 
 const containerElem = document.getElementById("container-elem");
